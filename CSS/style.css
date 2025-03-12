@@ -32,7 +32,6 @@ body {
    
     background-image: url('https://www.pennysaviour.com/images/banner_girl2.png');
     background-size: 190px;
-    /* background-position: right bottom; */
     background-position: right 50px bottom; /* Right se 20px andar */
     background-repeat: no-repeat;
     position: relative;
@@ -223,6 +222,15 @@ a {
         padding-bottom: 15px;
         margin-bottom: 15px;
         border-bottom: solid 1px #e0e0e0;
-        
     }
 }
+/* Add Section Review */
+.review-section {
+    height: 350px;
+    background-image: url(https://www.pennysaviour.com/sudo/images/review_banner.jpg);
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
