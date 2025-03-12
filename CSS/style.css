@@ -1,0 +1,228 @@
+@font-face{font-family:"Averta W01 ExtraBold";src:url(https://res.cloudinary.com/diky4mhrn/raw/upload/v1615373945/AvertaW01-ExtraBold_d36wia.woff2?v=1.0.1) format("woff2"),url(https://www.pennysaviour.com/sudo/fonts/AvertaW01-ExtraBold.woff?v=1.0.1) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:"Averta W01 Regular";src:url(https://res.cloudinary.com/diky4mhrn/raw/upload/v1615373937/AvertaW01-Regular_2_w2iapb.woff2?v=1.0.1) format("woff2"),url(https://www.pennysaviour.com/sudo/fonts/AvertaW01-Regular.woff?v=1.0.1) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:"Averta W01 Semibold";src:url(https://res.cloudinary.com/diky4mhrn/raw/upload/v1615378654/AvertaW01-Semibold_1_pjrhhg.woff2?v=1.0.1) format("woff2"),url(https://www.pennysaviour.com/sudo/fonts/AvertaW01-Semibold.woff?v=1.0.1) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:"Averta W01 Bold";src:url(https://res.cloudinary.com/diky4mhrn/raw/upload/v1615373957/AvertaW01-Bold_efxgfz.woff2?v=1.0.1) format("woff2"),url(https://www.pennysaviour.com/sudo/fonts/AvertaW01-Bold.woff?v=1.0.1) format("woff");font-weight:400;font-style:normal;font-display:swap}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background: #f8f8f8;
+}
+.navbar-nav>li>a {
+    font-family: Averta W01 Regular, sans-serif;color: #000 !important;  line-height: 1.2; 
+}
+.nav-item {
+    position: relative;
+  }
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #337ab7;
+    transition: width 0.3s ease-in-out;
+  }
+  .nav-item:hover::after {
+    width: 100%;
+  }
+/* set the background image */
+.hero-section {
+   
+    background-image: url('https://www.pennysaviour.com/images/banner_girl2.png');
+    background-size: 190px;
+    /* background-position: right bottom; */
+    background-position: right 50px bottom; /* Right se 20px andar */
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 5rem 0;
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hero-section {
+       
+        background-size: 30%; /* Smaller image */
+        background-position: center 40%; /* Centered horizontally, positioned below the heading */
+        background-repeat: no-repeat;
+        padding-bottom: 10rem; /* Extra space at bottom so image doesn't overlap content */
+    }
+}
+/* set the text */
+@media (max-width: 768px) {
+    .h-one {
+        background-size: 20%; /* Adjust image size for mobile */
+        background-position: center bottom; /* Keep image centered */
+        padding-bottom: 45% ; /* Increase padding if needed */
+    }
+}
+@media (max-width: 768px) {
+    .rev_man_hd {
+        background-color: #ffffff;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .rev_man_hd>p {
+        display: -webkit-box;
+        padding-bottom: 3px;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.rev_man_hd:hover {
+    color: #337ab7 !important;
+    transition: color 0.3s ease-in-out;
+}
+.rev_man_hd>a>h2 {
+    color: #000;
+    font-weight: 600;
+    font-family: "Averta W01 ExtraBold";
+}
+.chrev_list>a {
+    font-size: 1.11em;
+    text-decoration: none;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: "Averta W01 Semibold", Helvetica, Arial, sans-serif;
+}
+.h-one {
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: "Averta W01 ExtraBold";
+}
+/* All font family cover*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Averta W01 Regular';
+}
+/* Reviews css */
+inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.home-main-bg {
+    background-color: #fff;
+}
+.check_rev {
+    border-top: 3px solid #000;
+}
+/* Top Categories section */
+.cat-pad {
+    background-color: #fff;
+}
+a {
+    color: #337ab7;
+    text-decoration: none !important;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+
+.category-icon {
+    width: 140px;
+    height: 140px;
+    background-color: #f2f2f2;
+}
+.coupon-count {
+    color: #337ab7;
+}
+
+/* stay update  */
+.h2, h2 {
+    font-size: 30px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.blog-desc{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* set the review btn */
+.explore-review-btn {
+    background: #2d71f4;
+}
+/* Popular post css */
+.home-popular-div {
+    border-top: 5px solid #000;
+    padding: 15px 0 20.5px;
+}
+.pop-side-div {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 19.5px 0;
+}
+/* Coupon section */
+.use_coup {
+    background-color: #cae2ff;
+}
+.span1>span {
+    font-size: 1.11em;
+    text-decoration: none;
+    color: #000;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: "Averta W01 Semibold", Helvetica, Arial, sans-serif;
+}
+.fontset{
+    font-family: "Averta W01 ExtraBold";
+
+}
+.fontset1{
+    font-family: "Averta W01 Regular";
+
+}
+.setbd1 {
+    border-top: none !important;
+    border-bottom: none !important;
+    height: 100%; 
+}
+.mobile-white-bg {
+    background-color: transparent; /* Default (No background on larger screens) */
+}
+@media (max-width: 768px) {
+    .mobile-white-bg {
+        background-color: white !important; /* White background on mobile */
+    }
+}
+@media (max-width: 768px) {
+    .footer-div-bottom {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: solid 1px #e0e0e0;
+        
+    }
+}

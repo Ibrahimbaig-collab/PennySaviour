@@ -1,0 +1,616 @@
+@font-face{font-family:"Averta W01 ExtraBold";src:url(https://res.cloudinary.com/diky4mhrn/raw/upload/v1615373945/AvertaW01-ExtraBold_d36wia.woff2?v=1.0.1) format("woff2"),url(https://www.pennysaviour.com/sudo/fonts/AvertaW01-ExtraBold.woff?v=1.0.1) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:"Averta W01 Regular";src:url(https://res.cloudinary.com/diky4mhrn/raw/upload/v1615373937/AvertaW01-Regular_2_w2iapb.woff2?v=1.0.1) format("woff2"),url(https://www.pennysaviour.com/sudo/fonts/AvertaW01-Regular.woff?v=1.0.1) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:"Averta W01 Semibold";src:url(https://res.cloudinary.com/diky4mhrn/raw/upload/v1615378654/AvertaW01-Semibold_1_pjrhhg.woff2?v=1.0.1) format("woff2"),url(https://www.pennysaviour.com/sudo/fonts/AvertaW01-Semibold.woff?v=1.0.1) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:"Averta W01 Bold";src:url(https://res.cloudinary.com/diky4mhrn/raw/upload/v1615373957/AvertaW01-Bold_efxgfz.woff2?v=1.0.1) format("woff2"),url(https://www.pennysaviour.com/sudo/fonts/AvertaW01-Bold.woff?v=1.0.1) format("woff");font-weight:400;font-style:normal;font-display:swap}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f8f8;
+}
+
+/* .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px; 
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} */
+.nav-item {
+    position: relative;
+  }
+  
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #337ab7;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-item:hover::after {
+    width: 100%;
+  }
+  
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .heading_first {
+        font-size: 24px;
+        margin: 15px 0;
+    }
+}
+
+/* set the background image */
+.hero-section {
+   
+    background-image: url('https://www.pennysaviour.com/images/banner_girl2.png');
+    background-size: 190px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 5rem 0;
+    
+}
+@media (max-width: 768px) {
+    .hero-section {
+        background-position: center; /* Center me dikhayega */
+    }
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hero-section {
+        /* margin-top: 10px; */
+        background-size: 30%; /* Smaller image */
+        background-position: center 40%; /* Centered horizontally, positioned below the heading */
+        background-repeat: no-repeat;
+        padding-bottom: 10rem; /* Extra space at bottom so image doesn't overlap content */
+    }
+}
+/* set the text */
+@media (max-width: 768px) {
+    .h-one {
+        background-size: 20%; /* Adjust image size for mobile */
+        background-position: center bottom; /* Keep image centered */
+        padding-bottom: 45% ; /* Increase padding if needed */
+    }
+}
+/* Paragraph text setting */
+/* .f_para>p {
+    font-size: 17px;
+    line-height: 1.31;
+    max-width: 670px;
+    margin: 10px auto;
+    color: #000;
+} */
+.flags-container {
+    display: flex;
+    align-items: stretch; /* Flags ko full height dene ke liye */
+}
+.flag-img {
+    height: 200%; /* Image ko full height dene ke liye */
+    border-left: 2px solid rgb(167, 159, 159); /* Border start */
+    padding-left: 10px;
+}
+@media (max-width: 768px) {
+    .rev_man_hd {
+        background-color: #ffffff;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+.rev_man_hd>p {
+    font-size: 1.2em;
+}
+@media (max-width: 768px) {
+    .rev_man_hd>p {
+        display: -webkit-box;
+        padding-bottom: 3px;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.rev_man_hd:hover {
+    color: #337ab7 !important;
+    transition: color 0.3s ease-in-out;
+}
+.rev_man_hd>a>h2 {
+    color: #000;
+    font-weight: 600;
+    font-family: "Averta W01 ExtraBold";
+}
+.chrev_list>a {
+    font-size: 1.11em;
+    text-decoration: none;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: "Averta W01 Semibold", Helvetica, Arial, sans-serif;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .search-box {
+        margin-top: 10px;
+    }
+
+    .language-selector {
+        margin-top: 10px;
+    }
+}
+
+/* Banner */
+.top_cont {
+    background: #2e72f56b;
+    padding-top: 20px;
+   
+    background-repeat: no-repeat;
+    background-position: right 50px bottom 0;
+    background-size: 215px 280px;
+
+}
+
+.h-one {
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: "Averta W01 ExtraBold";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Reviews css */
+
+inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.top_reviews {
+    background-color: #f2f2f2;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+}
+
+.home-main-bg {
+    background-color: #fff;
+    padding: 15px;
+}
+/* //reverse section */
+.check_rev {
+    font-size: 1.1em; 
+    margin-bottom: 40px;
+}
+
+.check_rev {
+    border-top: 3px solid #000;
+    padding-top: 10px;
+    padding-left: 0;
+}
+@media (max-width: 768px) {
+    .check_rev {
+        background-color: #fff;
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .check_rev_top {
+        position: relative;
+        margin-top: 137%;
+        padding: 15px !important;
+    }
+}
+@media (max-width: 768px) {
+    .check_rev, .heading {
+        padding: 10px;
+    }
+}
+
+.home-svg-div {
+    padding: 20px 5px;
+}
+.col-xs-6 {
+    width: 50%;
+}
+
+/* Top Categories section */
+.cat-pad {
+    padding: 25px 0;
+    background-color: #fff;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none !important;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.category {
+    width: 150px;
+    text-align: center;
+}
+.category-icon {
+    width: 130px;
+    height: 130px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.category-icon i {
+    font-size: 40px;
+    color: black;
+}
+.category-title {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.coupon-count {
+    color: #337ab7;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Feautured Brands Sections */
+.feature-brands {
+    background-color: #f2f2f2;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    padding: 35px 0;
+   
+}
+
+.feature-brands {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* @media (max-width: 768px) {
+    .ad-brand-title {
+        font-size: 1rem;
+        line-height: 1.2em;
+    }
+} */
+
+.ad-brand-title {
+    font-size: 30px;
+    font-size: 3.6rem;
+    color: #000;
+    font-weight: 3000;
+    line-height: 1.2em;
+}
+
+.brand-logo{
+    max-width: 50px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .brand-logo img {
+        max-width: 120px; /* Smaller logos on mobile */
+    }}
+
+
+/* Blog section */
+@media (max-width: 768px) {
+    .review-single-h1 {
+        font-size: 3rem;
+    }
+}
+
+.review-single-h1 {
+    font-family: 'Averta W01 ExtraBold', Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    color: #000;
+    font-weight: 400;
+    line-height: 1em;
+}
+@media (max-width: 768px) {
+    .review-single-h1 {
+        font-size: 3rem;
+    }
+}
+.review-single-h1 {
+    font-family: 'Averta W01 ExtraBold', Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    color: #000;
+    font-weight: 400;
+    line-height: 1em;
+}
+@media (max-width: 768px) {
+    .review-single-h1 {
+        font-size: 3rem;
+    }
+}
+
+/* blog description */
+/* stay update  */
+.h2, h2 {
+    font-size: 30px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+/* end */
+
+.blog-desc{
+    font-size: 1.1rem;
+    font-weight: 40;
+    color: blue(0, 0, 0);
+    line-height: 1.34em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 12px;
+}
+.home-blog-h3 {
+    font-size: 2.9rem;
+    /* color: #000; */
+    font-weight: 600;
+    line-height: 1.2em;
+    margin: 0;
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+a {
+    color: #337ab7;
+    text-decoration: none !important;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* set the review btn */
+.explore-review-btn {
+    display: inline-block;
+    border-bottom: 0;
+    color: #fff;
+    height: 45px;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    line-height: 45px;
+    text-align: center;
+    background: #2d71f4;
+    transition: background-color .3sease;
+    font-weight: 350;
+    width: 100%;
+    margin-top: 20px;
+}
+/* Popular post css */
+.blog-home-category-div>span, .home-popular-div {
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: 400;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.home-popular-div {
+    border-top: 5px solid #000;
+    padding: 15px 0 20.5px;
+    text-align: left;
+    margin-top: 30px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pop-side-div {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 19.5px 0;
+    text-align: left;
+}
+
+.pop-side-div {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 19.5px 0;
+    text-align: left;
+}
+
+/* Coupon section */
+.use_coup {
+    background-color: #cae2ff;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+/* FOOTER icon set size */
+.footericon{
+    font-size: 25px;
+}
+/* footer hyperlink set text decoration  */
+.container a{
+    text-decoration: none;
+    
+}
+/* footer heading bold */
+.footer_heading{
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .foot_lists ul {
+        margin-bottom: 0;
+        padding-bottom: 13px;
+        display: none;
+    }
+}
+.foot_lists ul {
+    list-style-type: none;
+    margin: 0 0 60px;
+    padding: 0;
+}
+
+.footer-social-ul {
+    margin: 12px 0 0 0 !important;
+    display: block !important;
+}
+@media (max-width: 768px) {
+    .mob_logo {
+        text-align: center;
+    }
+}
+
+/* Hover section update */
+.hv a:hover {
+    color: #337ab7 !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.span1>span {
+    font-size: 1.11em;
+    text-decoration: none;
+    color: #000;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: "Averta W01 Semibold", Helvetica, Arial, sans-serif;
+}
+.fontset{
+    font-family: "Averta W01 ExtraBold";
+
+}
+.fontset1{
+    font-family: "Averta W01 Regular";
+
+}
+
+
+
+
